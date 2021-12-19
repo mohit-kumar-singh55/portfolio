@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  body{
+    background-position: center;
+    background-size: cover;
+  }
+  nav{
+    position: fixed;
+    width: 70px;
+    top: 20%;
+    transition: all 0.3s linear;
+  }
+  nav li{
+    left: 10px;
+    height: 100px;
+    position:relative;
+  }
+  nav li a{
+    display: block;
+    color: cyan;
+    height: 50px;
+    width: 50px;
+    line-height: 60px;
+    margin: 0 10px;
+    text-align: center;
+    background-color: #0F1624;
+    border-radius: 50%;
+    box-shadow: -2px -2px 3px rgba(255, 255, 255, 0.05),
+                3px 3px 3px rgba(0, 0, 0, 0.2);
+  }
+  nav li a i{
+    position:absolute;
+    font-size: 22px;
+  }
+
+  /* Giving left and top properties as they were miss matching */
+  nav li a .fa-house-damage{
+      left: 23px;
+      top: 12px;
+  }
+
+  nav li a .fa-user-tie{
+      left: 25px;
+      top: 12px;
+  }
+
+  nav li a .fa-laptop-code{
+      left: 21px;
+      top: 15px;
+  }
+
+  nav li a .fa-address-card{
+      left: 23px;
+      top: 15px;
+  }
+
+  /* Hover */
+  nav li a:hover .fas{
+      color: cyan;
+      text-shadow: 0 0 15px #00f3ff;
+  }
+
+  /* also for contact icon as it has class with another name */
+  nav li a:hover .far{
+      color: cyan;
+      text-shadow: 0 0 15px #00f3ff;
+  }
