@@ -1,5 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700);
 
+*{
+  margin: 0;
+  pad: 0;
+}
+
 .body {
   font-family: 'Space Grotesk', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #0F1624;
 }
