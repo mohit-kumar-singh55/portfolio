@@ -1,3 +1,86 @@
+.heading{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.wave{
+    animation: wave-animation 2.1s infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.default{
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+/* Button Hover */
+.btn{
+    position: relative;
+    display: inline-flex;
+    padding: 10px 30px;
+    background: transparent;
+    border-radius: 0.45rem;
+    border: 2px solid var(--color-text);
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+.btn span{
+    position: relative;
+    z-index: 1;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background: #2196f3;
+    transition: width 0.5s, height 0.5s;
+}
+
+.btn:hover::before{
+    width: 100px;
+    height: 100px;
+}
+
 .gpt3__header {
     display: flex;
     flex-direction: row;
@@ -38,7 +121,7 @@
 }
 
 .avatar{
-    transform: scale(10);
+    transform: scale(9);
 }
 
 @media screen and (max-width: 1050px) {

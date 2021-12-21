@@ -34,11 +34,36 @@ body {
 }
 
 .section__padding {
-  padding: 2rem 6rem;
+  padding: 4rem 6rem;
 }
 
 .section__margin {
   margin: 4rem 6rem;
+}
+
+#progressbar {
+  background: linear-gradient(0deg,#6617ce,#008aff,#00ffe7);
+  animation: scrollanimate 3s linear infinite;
+}
+
+#progressbar, #scrollpath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 6px;
+  height: 100%;
+}
+
+@keyframes scrollanimate {
+  0%, 100% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+
+50% {
+    -webkit-filter: hue-rotate(20deg);
+    filter: hue-rotate(20deg);
+  }
 }
 
 .late{

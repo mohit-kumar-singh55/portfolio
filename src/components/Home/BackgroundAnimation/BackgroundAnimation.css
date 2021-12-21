@@ -1,0 +1,8 @@
+.bgAimation{
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
+    top: 50px;
+    left: 50px;
+    display: flex;
+}

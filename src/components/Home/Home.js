@@ -1,13 +1,12 @@
 import React from 'react'
-import Header from './Header/Header';
 import Hero from './Hero/Hero';
+import BgAnimation from './BackgroundAnimation/BackgroundAnimation';
 
 function Home() {
     return (
         <div>
-            <Header />
             <Hero />
-            {/* <BgAnimation /> */}
+            <BgAnimation className="bgAnimation"/>
         </div>
     )
 }
