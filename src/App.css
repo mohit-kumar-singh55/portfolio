@@ -1,13 +1,58 @@
-@import url(https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700);
-
 *{
   margin: 0;
   pad: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.body {
-  font-family: 'Space Grotesk', sans-serif;
-  width: 100%;
-  height: 100vh;
-  background-color: #0F1624;
+body {
+  background: var(--color-bg);
+  font-family: var(--font-family);
+}
+
+.gradient__bg {
+  background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+}
+
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section__padding {
+  padding: 2rem 6rem;
+}
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+.late{
+  animation: late 6s linear;
+}
+
+@keyframes late {
+  0%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
