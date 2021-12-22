@@ -41,6 +41,55 @@ body {
   margin: 4rem 6rem;
 }
 
+.css-1tokw9w {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  flex-grow: 0;
+  border-radius: 100%;
+  position: absolute;
+  background: #bee3f8;
+  opacity: 0.1;
+  z-index: 1;
+  right: 0.65rem;
+  width: 18.75rem;
+  height: 18.75rem;
+  align-self: flex-end;
+}
+
+.css-jfjuh7 {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  flex-grow: 0;
+  border-radius: 100%;
+  position: absolute;
+  background: #bee3f8;
+  opacity: 0.1;
+  z-index: 1;
+  right: 37.5rem;
+  top: 15.625rem;
+  width: 28.125rem;
+  height: 28.125rem;
+  align-self: flex-start;
+}
+
+.animateme1 {
+  animation: animate1 15s linear infinite;
+}
+
+.animateme2 {
+  animation: animate2 10s linear 0s infinite normal none running;
+}
+
 #progressbar {
   background: linear-gradient(0deg,#6617ce,#008aff,#00ffe7);
   animation: scrollanimate 3s linear infinite;
@@ -50,8 +99,44 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  width: 6px;
+  width: 0.375rem;
   height: 100%;
+}
+
+@keyframes animate1{
+  0% {
+    transform: scale(.5);
+  }
+  25% {
+    transform: scale(.6);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(.6);
+  }
+  100% {
+    transform: scale(.5);
+  }
+}
+
+@keyframes animate2{
+  0% {
+    transform: scale(0.7);
+  }
+  25% {
+    transform: scale(0.6);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(0.7);
+  }
 }
 
 @keyframes scrollanimate {
