@@ -26,7 +26,7 @@ function Hero() {
                    <br/>Trying to Build something new 
                 </p>
                 <br/>
-                <a href="/" class="btn"><span>Resume</span></a>
+                <a href="/" className="btn"><span>Resume</span></a>
             </div>
 
             <div className="gpt3__header-image">

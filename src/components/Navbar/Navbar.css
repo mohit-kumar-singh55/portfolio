@@ -20,7 +20,7 @@
     height: 100px;
     position:relative;
   }
-  nav li a{
+  nav li .a{
     display: block;
     color: cyan;
     height: 50px;
@@ -33,40 +33,38 @@
     box-shadow: -2px -2px 3px rgba(255, 255, 255, 0.05),
                 3px 3px 3px rgba(0, 0, 0, 0.2);
   }
-  nav li a i{
+  nav li .a i{
     position:absolute;
     font-size: 22px;
   }
 
   /* Giving left and top properties as they were miss matching */
-  nav li a .fa-house-damage{
+  nav li .a .fa-house-damage{
       left: 23px;
       top: 12px;
   }
 
-  nav li a .fa-user-tie{
+  nav li .a .fa-user-tie{
       left: 26px;
       top: 12px;
   }
 
-  nav li a .fa-laptop-code{
+  nav li .a .fa-laptop-code{
       left: 22px;
       top: 15px;
   }
 
-  nav li a .fa-address-card{
+  nav li .a .fa-address-card{
       left: 22px;
       top: 14px;
   }
 
   /* Hover */
-  nav li a:hover .fas{
-      color: cyan;
+  nav li .a:hover .fas{
       text-shadow: 0 0 15px #00f3ff;
   }
 
   /* also for contact icon as it has class with another name */
-  nav li a:hover .far{
-      color: cyan;
+  nav li .a:hover .far{
       text-shadow: 0 0 15px #00f3ff;
   }
