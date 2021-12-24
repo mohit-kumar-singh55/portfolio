@@ -2,7 +2,7 @@
 .container {  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -10,13 +10,16 @@
       "About-Me About-Me About-Me languages languages languages"
       "About-Me About-Me About-Me languages languages languages"
       "Technology- Technology- Technology- Technology- Technology- Technology-"
-      "Technology- Technology- Technology- Technology- Technology- Technology-";
+      "Technology- Technology- Technology- Technology- Technology- Technology-"
+      "s_languages s_languages s_languages s_languages s_languages s_languages"
+      "s_languages s_languages s_languages s_languages s_languages s_languages";
     
     grid-column-gap: 2rem;
+    /* grid-row-gap: 2rem; */
 
     width: 100%;
     height: 100%;
-    padding: 0 6rem 0 6rem;
+    padding: 2rem 6rem 0 6rem;
 }
   
 .About-Me { 
@@ -25,7 +28,7 @@
     /* background-color: rgba(255,255,255,0.15); */
     border: 1px solid rgba(255,255,255,0.1);
     border-radius: 5px;
-    height: 100%;
+    height: 80%;
     width: 100%;
 }
   
@@ -37,6 +40,12 @@
   
 .Technology- { 
     grid-area: Technology-;
+    background-color: #252a33;
+    /* background-color: rgba(255,255,255,0.15); */
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
 }
 
 .box{
@@ -170,3 +179,249 @@
   transform: scale(1.1);
   box-shadow: 0 0 1.5rem hsl(0 0% 100% / 0.8);
 }
+
+/* Technologies section */
+
+.technology_box{
+    padding: 0 1rem 1rem 1rem;
+}
+
+
+.technology_box .dot{
+    height: 1rem;
+    width: 1rem;
+    position: relative;
+    display: inline-block;
+    margin: 0 0.5rem 0 0;
+    border-radius: 100%;
+}
+
+.technology_box .dot1{
+    background-color: #d9515d;
+}
+
+.technology_box .dot2{
+    background-color: #f4c025;
+}
+
+.technology_box .dot3{
+    background-color: #3ec930;
+}
+
+.technology_box .technology_heading{
+    display: inline;
+    position: relative;
+    left: 30rem;
+}
+
+.technology_box .technology_box_content{
+    padding: 0.5rem 0 0 1rem;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 1.3rem;
+    letter-spacing: 0.08rem;
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* bars */
+.technology_skills{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    align-self: flex-start;
+}
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+  }
+  
+  .skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  
+  .skill-bar{
+    height: 20px;
+    background: #cacaca;
+    border-radius: 8px;
+  }
+  
+  .skill-per{
+    height: 20px;
+    background-color: #0fbcf9;
+    border-radius: 8px;
+    width: 0;
+    transition: 1s linear;
+    position: relative;
+  }
+  
+  .skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    top: -41px;
+    right: 0;
+    transform: translateX(50%);
+  }
+  
+  .skill-per::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    top: -7px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+  }
+
+  .technology_svg{
+    width: 38%;
+  }
+
+  .technologySVG{
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Languages */
+
+.s_languages{
+    grid-area: s_languages;
+    background-color: #252a33;
+    /* background-color: rgba(255,255,255,0.15); */
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.s_languages_box{
+    padding: 0 1rem 1rem 1rem;
+}
+
+
+.s_languages_box .dot{
+    height: 1rem;
+    width: 1rem;
+    position: relative;
+    display: inline-block;
+    margin: 0 0.5rem 0 0;
+    border-radius: 100%;
+}
+
+.s_languages .dot1{
+    background-color: #d9515d;
+}
+
+.s_languages_box .dot2{
+    background-color: #f4c025;
+}
+
+.s_languages_box .dot3{
+    background-color: #3ec930;
+}
+
+.s_languages_box .s_languages_heading{
+    display: inline;
+    position: relative;
+    left: 27rem;
+}
+
+.s_languages_box .s_languages_box_content{
+    padding: 0.5rem 0 0 1rem;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 1.3rem;
+    letter-spacing: 0.08rem;
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* bars */
+.s_languages_skills{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+  }
+  
+  .skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  
+  .skill-bar{
+    height: 20px;
+    background: #cacaca;
+    border-radius: 8px;
+  }
+  
+  .skill-per{
+    height: 20px;
+    background-color: #0fbcf9;
+    border-radius: 8px;
+    width: 0;
+    transition: 1s linear;
+    position: relative;
+  }
+  
+  .skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    top: -41px;
+    right: 0;
+    transform: translateX(50%);
+  }
+  
+  .skill-per::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    top: -7px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+  }
+
+  .s_languages_svg{
+    width: 28%;
+    position: relative;
+    left: 3rem;
+    top: 3rem;
+    transform: scale(1.2);
+  }
+
+  .s_languagesSVG{
+    height: 100%;
+    width: 100%;
+  }
