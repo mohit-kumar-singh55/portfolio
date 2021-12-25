@@ -1,30 +1,31 @@
 import React from 'react';
 import "./Card.css";
-import cpp from "../../About/images/cpp.jpg"
+import { projects } from '../constants/constants';
 
-function Card() {
+const Card = () =>{
     return (
-        <div className='blogCard'>
-            <img className="img" src={cpp} alt='C++' />
-            <div className="titleContent">
-                <div className="headerThree">Java Title</div>
-                <div className="hr" />
-            </div>
-            <div className="cardInfo">This is the Project which i have made to compete with others</div>
-            <div>
-                <div className="titleContent stack">Stack</div>
-                <ul className='tagList'>
-                    <li className="tag">React</li>
-                    <li className="tag">Node</li>
-                    <li className="tag">Express</li>
-                    <li className="tag">MongoDB</li>
+        projects.map(({ id, image, title, description, tags, source, visit }) => (
+            <div className='blogCard' key={id}>
+                <img className="img" src={image} alt='Project' />
+                <div className="titleContent">
+                    <div className="headerThree">{title}</div>
+                    <div className="hr" />
+                </div>
+                <div className="cardInfo">{description}</div>
+                <div>
+                    <div className="titleContent stack">Stack</div>
+                    <ul className='tagList'>
+                    {tags.map((tag, i) => (
+                        <li className="tag" key={i}>{tag}</li>
+                    ))}
+                    </ul>
+                </div>
+                <ul className="utilityList">
+                    <a href={visit} target="_blank" rel="noreferrer" className="btn"><span>View</span></a>
+                    <a href={source} target="_blank" rel="noreferrer" className="btn"><span>Code</span></a>
                 </ul>
             </div>
-            <ul className="utilityList">
-                <a href="www.google.com" target="_blank" className="btn"><span>View</span></a>
-                <a href="www.google.com" target="_blank" className="btn"><span>Code</span></a>
-            </ul>
-        </div>
+        ))
     )
 }
 
