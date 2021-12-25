@@ -1,0 +1,83 @@
+.blogCard{
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+    text-align: center;
+    width: 400px;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.titleContent{
+    text-align: center;
+    z-index: 20;
+    width: 100%;
+}
+
+.headerThree{
+    font-weight: 500;
+    letter-spacing: 2px;
+    /* color: #9cc9e3; */
+    padding: .5rem 0;
+    font-size: 2rem;
+}
+
+.hr{
+    width: 50px;
+    height: 3px;
+    margin: 20px auto;
+    border: 0;
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+}
+
+.cardInfo{
+    width: 100%;
+    padding: 0 40px 20px 40px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+.stack{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+.tagList{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 2rem 2rem 2rem;;
+}
+
+.tag{
+    color: #d8bfbf;
+    font-size: 1.3rem;
+}
+
+.utilityList{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0.5rem 1.5rem 0.5rem;
+}
+
+
+/* Media */
+ 
+/* sm */
+@media screen and (max-width: 640px){
+    .blogCard{
+        width: 100%;
+    }
+
+    .cardInfo{
+        padding: .3rem
+    }
+}

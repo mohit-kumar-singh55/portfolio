@@ -1,0 +1,73 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1040px;
+    position: relative;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sectionTitle{
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 50px;
+    width: max-content;
+    max-width: 100%;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
+    padding: 0px 22rem 18px;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    padding: 3rem 0;
+    place-items: center;
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+
+/* Media Quaries */
+
+/* md */
+@media screen and (max-width: 768px) {
+    .section{
+        padding: 24px 48px 0;
+        flex-direction: column;
+    }
+
+    .sectionTitle{
+        font-size: 56px;
+        line-height: 56px;
+        margin-bottom: 12px;
+        padding:40px 0 12px;
+    }
+}
+
+/* sm */
+@media screen and (max-width: 640px) {
+    .section{
+        padding: 0;
+        width: calc(100vw - 32px);
+        flex-direction: column;
+    }
+
+    .sectionTitle{
+        font-size: 32px;
+        line-height: 40px;
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 8px;
+        padding: 16px 0 8px;
+        max-width: 100%;
+    }
+
+    .gridContainer{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        padding-bottom: 0;
+    }
+}

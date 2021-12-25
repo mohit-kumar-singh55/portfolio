@@ -4,15 +4,16 @@ import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import About from './components/About/About';
-import Transtition from './components/Transition/Transition';
+import Transition from './components/Transition/Transition';
 import BgAnimation from './components/BackgroundAnimation/BackgroundAnimation';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Projects from './components/Projects/Projects';
 
 function App() {
   return (
     <Router>
       <div className="gradient__bg">
-        <Transtition />
+        <Transition />
         <div className='late'>
           {/* BgAnimation */}
           <BgAnimation />
@@ -31,7 +32,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about"about element={<About />} />
-            {/* <Route path="/projects" element={<Projects />} /> */}
+            <Route path="/projects" element={<Projects />} />
             {/* <Route path="/contact" element={<Contact />} /> */}
           </Routes>
         </div>
