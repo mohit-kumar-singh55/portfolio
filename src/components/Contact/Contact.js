@@ -15,13 +15,11 @@ function Contact() {
         if (map.current) return; // initialize map only once
         map.current = new mapboxgl.Map({
             container: mapContainer.current,
-            style: 'mapbox://styles/mapbox/streets-v11',
+            style: 'mapbox://styles/mapbox/dark-v10',
             center: [lng, lat],
             zoom: zoom
         });
-    });
 
-    useEffect(() => {
         if (!map.current) return; // wait for map to initialize
         map.current.on('move', () => {
             setLng(map.current.getCenter().lng.toFixed(4));
