@@ -4,6 +4,11 @@
     text-align: center;
     width: 400px;
     color: rgba(255, 255, 255, 0.92);
+    transition: box-shadow 0.3s;
+}
+
+.blogCard:hover{
+    box-shadow: 3px 3px 20px rgba(80, 78, 78, 1);
 }
 
 .img{

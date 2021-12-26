@@ -8,6 +8,7 @@ import Transition from './components/Transition/Transition';
 import BgAnimation from './components/BackgroundAnimation/BackgroundAnimation';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about"about element={<About />} />
             <Route path="/projects" element={<Projects />} />
-            {/* <Route path="/contact" element={<Contact />} /> */}
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </div>
