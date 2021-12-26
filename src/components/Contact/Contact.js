@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Contact.css";
-import mapboxgl from 'mapbox-gl';
+
 
 function Contact() {
     return (
