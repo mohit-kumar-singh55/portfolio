@@ -9,7 +9,7 @@ function Contact() {
     const map = useRef(null);
     const [lng, setLng] = useState(78.103542);
     const [lat, setLat] = useState(29.9252298);
-    const [zoom, setZoom] = useState(9);
+    const [zoom, setZoom] = useState(11);
 
     useEffect(() => {
         if (map.current) return; // initialize map only once
@@ -44,7 +44,7 @@ function Contact() {
                                     <a className="linkItem" href="tel:9105577623">9105577623</a>
                                 </div>
                                 <div className="linkColumn">
-                                    <h4 className="linkTitle">Email</h4>
+                                    <h4 className="linkTitle">Email (Click me)</h4>
                                     <a className="linkItem" href="mailto:mohitkumarsingh12344@gmail.com">mohitkumarsingh12344@gmail.com</a>
                                 </div>
                                 <div className="linkColumn">
@@ -68,7 +68,11 @@ function Contact() {
                         <div className="c_map">
                             <div ref={mapContainer} className="map-container" />
                             <div className="c_socialMedia">
-
+                                <div className="sm">
+                                    <a href="https://instagram.com/sniper.mks_55" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/mohit-kumar-singh-128ab4217/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a>
+                                    <a href="https://github.com/mohit-kumar-singh55" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
