@@ -28,7 +28,7 @@ function Hero() {
                                                     waitUntilVisible: true,
                                                 }}
                                                 getBeforeInit={(instance) => {
-                                                    instance.options({speed: 200}).pause(1000).type("Web Developer")
+                                                    instance.options({speed: 200}).pause(500).type("Web Developer")
                                                     .pause(1000).move(-10).options({speed: 200}).delete(3).pause(500).type("React")
                                                     .pause(1000).options({speed: 200}).delete(5).type("App")
                                                     .pause(1000).options({speed: 200}).move(10).delete(13)

@@ -10,6 +10,7 @@ import ts from "./images/ts.png";
 import $ from "jquery";
 import technology from "./technology.svg";
 import slanguages from "./slanguages.svg";
+import TypeIt from "typeit-react";
 
 function About() {
     useEffect(() => {
@@ -50,7 +51,15 @@ function About() {
                             <br />
                             <p>Looking forward to gain some experience</p>
                             <br />
-                            <p><em><strong>~Thank you for your time</strong></em></p>
+                            <p><em><strong><TypeIt options={{
+                                                        speed: 200,
+                                                        loop: true,
+                                                        waitUntilVisible: true,
+                                                    }}
+                                                        getBeforeInit={(instance) => {
+                                                            instance.options({ speed: 150 }).pause(500).type("~Thank you for your time").pause(500);
+                                                            return instance;
+                                                        }} /></strong></em></p>
                         </div>
                     </div>
                 </div>
