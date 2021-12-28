@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import './Hero.css';
 import mks from "./image/mks.png";
+import TypeIt from "typeit-react";
 
 function Hero() {
     useEffect(() => {
@@ -21,7 +22,19 @@ function Hero() {
                 <h2 className="heading">Hi<span className="wave">👋</span>, I'm</h2>
                 <h1 className="gradient__text">Mohit Kumar Singh</h1>
                 <br/>
-                <h2 className='default'>Web Developer</h2>
+                <h2 className='default'><TypeIt options={{
+                                                    speed: 200,
+                                                    loop: true,
+                                                    waitUntilVisible: true,
+                                                }}
+                                                getBeforeInit={(instance) => {
+                                                    instance.options({speed: 200}).pause(1000).type("Web Developer")
+                                                    .pause(1000).move(-10).options({speed: 200}).delete(3).pause(500).type("React")
+                                                    .pause(1000).options({speed: 200}).delete(5).type("App")
+                                                    .pause(1000).options({speed: 200}).move(10).delete(13)
+                                                    .pause(1000).options({speed: 200}).type("Freelancer");
+                                                    return instance;
+                                                }} /></h2>
                 <p>Intermediate at - React, React Native, Firebase. Love to play with DOMS.
                    <br/>Trying to Build something new 
                 </p>
