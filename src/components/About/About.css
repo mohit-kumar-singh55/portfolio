@@ -425,3 +425,10 @@
     height: 100%;
     width: 100%;
   }
+
+.bm{
+    margin: 4rem 0;
+    height: 1px;
+    position: relative;
+    bottom: 0;
+}

@@ -27,6 +27,7 @@ function Hero() {
                 </p>
                 <br/>
                 <a href="/" className="btn"><span>Resume</span></a>
+                <div className="sectionDivider" />
             </div>
 
             <div className="gpt3__header-image">

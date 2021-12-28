@@ -18,6 +18,16 @@ body {
   background: var(--color-bg);
   font-family: var(--font-family);
 }
+/* linear-gradient(270deg, #13ADC7 0%, #945DD6 100%) */
+.sectionDivider{
+  width: 64px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #fff;
+  /* background: linear-gradient(270deg, #F46737 0%, #945DD6 100%); */
+  background: linear-gradient(270deg, #13ADC7 0%, #945DD6 100%);
+  margin: 3rem 0;
+}
 
 .gradient__bg {
   background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
@@ -173,5 +183,22 @@ body {
   }
   100%{
     opacity: 1;
+  }
+}
+
+
+/* Media Quaries */
+@media screen and (max-width: 768px) {
+  .sectionDivider{
+    width: 48px;
+    height: 4px;
+  }
+}
+
+/* sm */
+@media screen and (max-width: 640px) {
+  .sectionDivider{
+    width: 32px;
+    height: 2px;
   }
 }
