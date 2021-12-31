@@ -28,12 +28,12 @@ function Hero() {
                                                     waitUntilVisible: true,
                                                 }}
                                                 getBeforeInit={(instance) => {
-                                                    instance.pause(500).type("Web Developer")
-                                                    .pause(1000).move(-10).delete(3).pause(500).type("React")
+                                                    instance.pause(500).type("Full Stack Developer")
+                                                    .pause(1000).move(-10).delete(10).pause(500).type("React")
                                                     .pause(1000).delete(5).type("App")
                                                     .pause(1000).move(10).delete(13)
                                                     .pause(1000).type("Freelancer")
-                                                    .pause(1000).delete(10).type("Competitive Coder");
+                                                    .pause(1000).delete(10).type("Java Developer");
                                                     return instance;
                                                 }} /></h2>
                 <p>Intermediate at - React, React Native, Firebase. Love to play with DOMS.

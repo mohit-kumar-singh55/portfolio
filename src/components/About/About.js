@@ -11,6 +11,7 @@ import $ from "jquery";
 import technology from "./technology.svg";
 import slanguages from "./slanguages.svg";
 import TypeIt from "typeit-react";
+import {motion} from "framer-motion";
 
 function About() {
     useEffect(() => {
@@ -88,19 +89,19 @@ function About() {
                             <div className='technology_skills'>
                                 <div className="skills">
                                     <div className="skill">
-                                        <div className="skill-name">ReactJS</div>
+                                        <div className="skill-name">Full Stack Web</div>
                                         <div className="skill-bar">
                                             <div className="skill-per" per="70"></div>
                                         </div>
                                     </div>
                                     <div className="skill">
-                                        <div className="skill-name">NodeJS</div>
+                                        <div className="skill-name">React Native</div>
                                         <div className="skill-bar">
                                             <div className="skill-per" per="60"></div>
                                         </div>
                                     </div>
                                     <div className="skill">
-                                        <div className="skill-name">MangoDb</div>
+                                        <div className="skill-name">App Development</div>
                                         <div className="skill-bar">
                                             <div className="skill-per" per="80"></div>
                                         </div>
