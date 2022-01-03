@@ -9,6 +9,7 @@ import BgAnimation from './components/BackgroundAnimation/BackgroundAnimation';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import Page404 from './components/404/Page404';
 
 function App() {
   return (
@@ -32,9 +33,10 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about"about element={<About />} />
+            <Route path="/about" about element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Page404 />} />
           </Routes>
         </div>
       </div>
