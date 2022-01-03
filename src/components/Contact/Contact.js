@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import "./Contact.css";
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+import { motion } from "framer-motion";
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic25pcGVyLW1rcy01NSIsImEiOiJja3VkdmpzMDAweHhrMnJtdHBkbG5tNWJxIn0.1XWgY-Eh_jdJqCfFc4pW3A';
 
@@ -28,14 +29,34 @@ function Contact() {
         });
     });
 
+    const variants = {
+        initial: {
+            opacity: 0,
+            y: 100
+        },
+        animate: {
+            opacity: 1,
+            y: 0
+        }
+    }
+
+    const stagger = {
+        initial: {},
+        animate: {
+            transition:{
+                staggerChildren:0.2,
+            }
+        }
+    }
+
     return (
         <div className="Contact-Me">
-            <div className='box'>
+            <motion.div variants={stagger} initial="initial" animate="animate" transition={{ delay: 0.2 }} className='box'>
                 <span className='dot dot1'></span>
                 <span className='dot dot2'></span>
                 <span className='dot dot3'></span>
                 <h2 className='gradient__text contact_heading'>Contact Me</h2>
-                <div className='box_content'>
+                <motion.div variants={variants} className='box_content'>
                     <div className='c_gridContainer'>
                         <div className="c_links">
                             <ul className="linkList">
@@ -76,8 +97,8 @@ function Contact() {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </div>
     )
 }

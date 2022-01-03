@@ -3,6 +3,7 @@ import Avatar from '@material-ui/core/Avatar';
 import './Hero.css';
 import mks from "./image/mks.png";
 import TypeIt from "typeit-react";
+import { motion } from "framer-motion";
 
 function Hero() {
     useEffect(() => {
@@ -16,9 +17,29 @@ function Hero() {
         }
     }, [])
 
+    const variants = {
+        initial: {
+            opacity: 0,
+            y: 100
+        },
+        animate: {
+            opacity: 1,
+            y: 0
+        }
+    }
+
+    const stagger = {
+        initial: {},
+        animate: {
+            transition:{
+                staggerChildren:0.2,
+            }
+        }
+    }
+
     return (
-        <div className="gpt3__header section__padding">
-            <div className="gpt3__header-content">
+        <motion.div variants={stagger} initial="initial" animate="animate" transition={{ delay: 0.2 }} className="gpt3__header section__padding">
+            <motion.div variants={variants} className="gpt3__header-content">
                 <h2 className="heading">Hi<span className="wave">👋</span>, I'm</h2>
                 <h1 className="gradient__text">Mohit Kumar Singh</h1>
                 <br/>
@@ -42,12 +63,12 @@ function Hero() {
                 <br/>
                 <a href="/" className="btn"><span>Resume</span></a>
                 <div className="sectionDivider" />
-            </div>
+            </motion.div>
 
-            <div className="gpt3__header-image">
+            <motion.div variants={variants} className="gpt3__header-image">
                 <Avatar alt="MKS" src={mks} className='avatar' />
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     )
 }
 

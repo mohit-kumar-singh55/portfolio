@@ -11,9 +11,29 @@ import $ from "jquery";
 import technology from "./technology.svg";
 import slanguages from "./slanguages.svg";
 import TypeIt from "typeit-react";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 function About() {
+    const variants = {
+        initial: {
+            opacity: 0,
+            y: 100
+        },
+        animate: {
+            opacity: 1,
+            y: 0
+        }
+    }
+
+    const stagger = {
+        initial: {},
+        animate: {
+            transition:{
+                staggerChildren:0.2,
+            }
+        }
+    }
+
     useEffect(() => {
         $('.skill-per').each(function () {
             var $this = $(this);
@@ -33,9 +53,9 @@ function About() {
 
     return (
         <>
-            <div className="container">
+            <motion.div variants={stagger} initial="initial" animate="animate" transition={{ delay: 0.2 }}  className="container">
                 {/* About */}
-                <div className="About-Me">
+                <motion.div variants={variants} className="About-Me">
                     <div className='box'>
                         <span className='dot dot1'></span>
                         <span className='dot dot2'></span>
@@ -53,20 +73,20 @@ function About() {
                             <p>Looking forward to gain some experience</p>
                             <br />
                             <p><em><strong><TypeIt options={{
-                                                        speed: 200,
-                                                        loop: true,
-                                                        waitUntilVisible: true,
-                                                    }}
-                                                        getBeforeInit={(instance) => {
-                                                            instance.options({ speed: 150 }).pause(500).type("~Thank you for your time").pause(500);
-                                                            return instance;
-                                                        }} /></strong></em></p>
+                                speed: 200,
+                                loop: true,
+                                waitUntilVisible: true,
+                            }}
+                                getBeforeInit={(instance) => {
+                                    instance.options({ speed: 150 }).pause(500).type("~Thank you for your time").pause(500);
+                                    return instance;
+                                }} /></strong></em></p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Languages */}
-                <div className="languages">
+                <motion.div variants={variants} className="languages">
                     <div className="wrap">
                         <div className="tile"><img src={cpp} alt="C++" /></div>
                         <div className="tile"><img src={go} alt="" /></div>
@@ -76,10 +96,10 @@ function About() {
                         <div className="tile"><img src={py} alt="" /></div>
                         <div className="tile"><img src={java} alt="" /></div>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Technologies */}
-                <div className="Technology-">
+                <motion.div variants={variants} className="Technology-">
                     <div className='technology_box'>
                         <span className='dot dot1'></span>
                         <span className='dot dot2'></span>
@@ -113,10 +133,10 @@ function About() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Speaking Languages */}
-                <div className="s_languages">
+                <motion.div variants={variants} className="s_languages">
                     <div className='s_languages_box'>
                         <span className='dot dot1'></span>
                         <span className='dot dot2'></span>
@@ -150,8 +170,8 @@ function About() {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div >
+                </motion.div>
+            </motion.div >
 
             {/* just for margin at bottom */}
             <div className="bm" />
