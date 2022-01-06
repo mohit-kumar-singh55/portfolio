@@ -82,7 +82,7 @@ function Contact() {
                                 </div>
                                 <div className="linkColumn">
                                     <h4 className="linkTitle">Website</h4>
-                                    <a className="linkItem" href="www.mks.co.in">www.mks.co.in</a>
+                                    <a className="linkItem" href="www.mks.co.in">www.mks.github.io</a>
                                 </div>
                             </ul>
                         </div>
