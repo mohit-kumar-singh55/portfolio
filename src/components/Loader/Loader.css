@@ -1,71 +1,96 @@
-#logo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    /* animation: fill 0.5s ease forwards 3.5s; */
+.svg_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#logo{
+#logo {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     /* animation: fill 0.5s ease forwards 3.5s; */
 }
 
 /* These Lengths we have got from Javascript */
 
-#logo path:nth-child(1){
+#logo path:nth-child(1) {
     stroke-dasharray: 571;
     stroke-dashoffset: 571;
     animation: line-anim 2s ease forwards;
 }
 
-#logo path:nth-child(2){
+#logo path:nth-child(2) {
     stroke-dasharray: 463.9;
     stroke-dashoffset: 463.9;
     animation: line-anim 2s ease forwards 0.3s;
 }
 
-#logo path:nth-child(3){
+#logo path:nth-child(3) {
     stroke-dasharray: 493;
     stroke-dashoffset: 493;
     animation: line-anim 2s ease forwards 0.6s;
 }
 
-#logo path:nth-child(4){
+#logo path:nth-child(4) {
     stroke-dasharray: 226.9;
     stroke-dashoffset: 226.9;
     animation: line-anim 2s ease forwards 0.9s;
 }
 
-#logo path:nth-child(5){
+#logo path:nth-child(5) {
     stroke-dasharray: 635;
     stroke-dashoffset: 635;
     animation: line-anim 2s ease forwards 1.2s;
 }
 
-#logo path:nth-child(6){
+#logo path:nth-child(6) {
     stroke-dasharray: 604.4829711914062;
     stroke-dashoffset: 604.4829711914062;
     animation: line-anim 2s ease forwards 1.5s;
 }
 
-#logo path:nth-child(7){
+#logo path:nth-child(7) {
     stroke-dasharray: 463.9;
     stroke-dashoffset: 463.9;
     animation: line-anim 2s ease forwards 1.8s;
 }
 
-#logo path:nth-child(8){
+#logo path:nth-child(8) {
     stroke-dasharray: 549;
     stroke-dashoffset: 549;
     animation: line-anim 2s ease forwards 2.1s;
 }
 
-@keyframes line-anim{
-    to{
+@keyframes line-anim {
+    to {
         stroke-dashoffset: 0;
     }
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 520px) {
+    #logo {
+        transform: scale(.7);
+        -webkit-transform: scale(.7);
+        -moz-transform: scale(.7);
+        -ms-transform: scale(.7);
+        -o-transform: scale(.7);
+        left: 0;
+        top: 50%;
+}
+}
+
+@media screen and (max-width: 440px) {
+    #logo {
+        transform: scale(.6);
+        -webkit-transform: scale(.6);
+        -moz-transform: scale(.6);
+        -ms-transform: scale(.6);
+        -o-transform: scale(.6);
+        left: 0;
+        top: 50%;
+}
 }

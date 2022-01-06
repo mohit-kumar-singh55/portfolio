@@ -3,7 +3,7 @@ import './Loader.css';
 
 function Loader() {
     return (
-        <div>
+        <div className='svg_container'>
             <svg id="logo" width="665" height="116" viewBox="0 0 665 116" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d)">
                     <path
