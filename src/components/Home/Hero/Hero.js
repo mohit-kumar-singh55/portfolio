@@ -57,7 +57,7 @@ function Hero() {
                                                     .pause(1000).delete(10).type("Java Developer");
                                                     return instance;
                                                 }} /></h2>
-                <p>Intermediate at - React, React Native, Firebase. Love to play with DOMS.
+                <p>Intermediate at - React, Java, Python and App Development. Love to play with DOMS.
                    <br/>Trying to Build something new 
                 </p>
                 <br/>
