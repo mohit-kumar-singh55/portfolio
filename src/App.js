@@ -32,10 +32,10 @@ function App() {
           <Header />
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" about element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/mks.github.io/" element={<Home />} />
+            <Route path="/mks.github.io/about" about element={<About />} />
+            <Route path="/mks.github.io/projects" element={<Projects />} />
+            <Route path="/mks.github.io/contact" element={<Contact />} />
             <Route path="*" element={<Page404 />} />
           </Routes>
         </div>
