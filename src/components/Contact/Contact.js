@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import "./Contact.css";
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import { motion } from "framer-motion";
+import {Link} from "react-router-dom";
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic25pcGVyLW1rcy01NSIsImEiOiJja3VkdmpzMDAweHhrMnJtdHBkbG5tNWJxIn0.1XWgY-Eh_jdJqCfFc4pW3A';
 
@@ -82,7 +83,7 @@ function Contact() {
                                 </div>
                                 <div className="linkColumn">
                                     <h4 className="linkTitle">Website</h4>
-                                    <a className="linkItem" href="www.mohit-kumar-singh55.github.io/mks.github.io">www.mks.github.io</a>
+                                    <Link className="linkItem" href="/">www.mks.github.io</Link>
                                 </div>
                             </ul>
                         </div>
