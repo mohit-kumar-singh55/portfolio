@@ -202,3 +202,24 @@ body {
     height: 2px;
   }
 }
+
+/* for phones */
+.forphone{
+  display: none;
+  justify-content: center;
+  align-self: center;
+  width: 80%;
+  margin: auto;
+  font-size: medium;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.92)
+}
+
+@media screen and (max-width: 1000px) {
+  .forphone{
+    display: flex;
+  }
+  .notforphone{
+    display: none;
+  }
+}
