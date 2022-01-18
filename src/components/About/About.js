@@ -5,7 +5,7 @@ import js from "./images/js.png";
 import java from "./images/java.png";
 import py from "./images/py.png";
 import go from "./images/go.png";
-import swift from "./images/swift.png";
+import react from "./images/react.png";
 import ts from "./images/ts.png";
 import $ from "jquery";
 import technology from "./technology.svg";
@@ -90,7 +90,7 @@ function About() {
                     <div className="wrap">
                         <div className="tile"><img src={cpp} alt="C++" /></div>
                         <div className="tile"><img src={go} alt="" /></div>
-                        <div className="tile"><img src={swift} alt="" /></div>
+                        <div className="tile"><img src={react} alt="" /></div>
                         <div className="tile"><img src={js} alt="" /></div>
                         <div className="tile"><img src={ts} alt="" /></div>
                         <div className="tile"><img src={py} alt="" /></div>
