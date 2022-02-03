@@ -1,10 +1,10 @@
-.heading{
+.heading {
     font-size: 3rem;
     font-weight: 43.75rem;
     color: rgba(255, 255, 255, 0.92);
 }
 
-.wave{
+.wave {
     animation: wave-animation 2.1s infinite;
     transform-origin: 70% 70%;
     display: inline-block;
@@ -14,38 +14,44 @@
     0% {
         transform: rotate(0deg);
     }
-    
+
     10% {
         transform: rotate(14deg);
     }
+
     20% {
         transform: rotate(-8deg);
     }
+
     30% {
         transform: rotate(14deg);
     }
+
     40% {
         transform: rotate(-4deg);
     }
+
     50% {
         transform: rotate(10deg);
     }
+
     60% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(0deg);
     }
 }
 
-.default{
+.default {
     font-size: 2rem;
     font-weight: 50rem;
     color: rgba(255, 255, 255, 0.92);
 }
 
 /* Button Hover */
-.btn{
+.btn {
     position: relative;
     display: inline-flex;
     padding: 0.625rem 1.875rem;
@@ -58,17 +64,17 @@
     overflow: hidden;
 }
 
-.btn span{
+.btn span {
     position: relative;
     z-index: 1;
 }
 
-.btn::before{
+.btn::before {
     content: '';
     position: absolute;
     top: var(--y);
     left: var(--x);
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 0px;
     height: 0px;
     border-radius: 50%;
@@ -76,7 +82,7 @@
     transition: width 0.5s, height 0.5s;
 }
 
-.btn:hover::before{
+.btn:hover::before {
     width: 6.25rem;
     height: 6.25rem;
 }
@@ -84,6 +90,7 @@
 .gpt3__header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .gpt3__header-content {
@@ -91,7 +98,6 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-
     margin-right: 5rem;
 }
 
@@ -120,7 +126,7 @@
     align-items: center;
 }
 
-.avatar{
+.avatar {
     transform: scale(9);
     box-shadow: 0px 0px 2px 5px rgb(0 0 8 / 25%);
 }

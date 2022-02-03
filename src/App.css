@@ -1,14 +1,14 @@
 /* to remove the scrollbar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   user-select: none;
 }
 
-*{
+* {
   margin: 0;
   pad: 0;
   box-sizing: border-box;
@@ -18,8 +18,9 @@ body {
   background: var(--color-bg);
   font-family: var(--font-family);
 }
+
 /* linear-gradient(270deg, #13ADC7 0%, #945DD6 100%) */
-.sectionDivider{
+.sectionDivider {
   width: 64px;
   height: 6px;
   border-radius: 10px;
@@ -30,19 +31,19 @@ body {
 }
 
 .gradient__bg {
-  background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  background: -moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
 
   /* safari 5.1+,chrome 10+ */
-  background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  background: -webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
 
   /* opera 11.10+ */
-  background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  background: -o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
 
   /* ie 10+ */
-  background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  background: -ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
 
   /* global 92%+ browsers support */
-  background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  background: radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
 }
 
 .gradient__text {
@@ -110,7 +111,7 @@ body {
 }
 
 #progressbar {
-  background: linear-gradient(0deg,#6617ce,#008aff,#00ffe7);
+  background: linear-gradient(0deg, #6617ce, #008aff, #00ffe7);
   animation: scrollanimate 3s linear infinite;
 }
 
@@ -122,37 +123,45 @@ body {
   height: 100%;
 }
 
-@keyframes animate1{
+@keyframes animate1 {
   0% {
     transform: scale(.5);
   }
+
   25% {
     transform: scale(.6);
   }
+
   50% {
     transform: scale(1);
   }
+
   75% {
     transform: scale(.6);
   }
+
   100% {
     transform: scale(.5);
   }
 }
 
-@keyframes animate2{
+@keyframes animate2 {
   0% {
     transform: scale(0.7);
   }
+
   25% {
     transform: scale(0.6);
   }
+
   50% {
     transform: scale(1);
   }
+
   75% {
     transform: scale(0.6);
   }
+
   100% {
     transform: scale(0.7);
   }
@@ -164,24 +173,26 @@ body {
     filter: hue-rotate(0deg);
   }
 
-50% {
+  50% {
     -webkit-filter: hue-rotate(20deg);
     filter: hue-rotate(20deg);
   }
 }
 
-.late{
+.late {
   animation: late 6s linear;
 }
 
 @keyframes late {
-  0%{
+  0% {
     opacity: 0;
   }
-  80%{
+
+  80% {
     opacity: 0;
   }
-  100%{
+
+  100% {
     opacity: 1;
   }
 }
@@ -189,7 +200,7 @@ body {
 
 /* Media Quaries */
 @media screen and (max-width: 768px) {
-  .sectionDivider{
+  .sectionDivider {
     width: 48px;
     height: 4px;
   }
@@ -197,29 +208,8 @@ body {
 
 /* sm */
 @media screen and (max-width: 640px) {
-  .sectionDivider{
+  .sectionDivider {
     width: 32px;
     height: 2px;
-  }
-}
-
-/* for phones */
-.forphone{
-  display: none;
-  justify-content: center;
-  align-self: center;
-  width: 80%;
-  margin: auto;
-  font-size: medium;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.92)
-}
-
-@media screen and (max-width: 1000px) {
-  .forphone{
-    display: flex;
-  }
-  .notforphone{
-    display: none;
   }
 }
